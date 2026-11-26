@@ -766,6 +766,34 @@ button {
   margin: 0;
 }
 
+/* ---------- Support the Archive Section ---------- */
+.support-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+  gap: 2.2rem;
+  align-items: center;
+  background: linear-gradient(145deg, rgba(15, 34, 66, 0.78), rgba(7, 17, 34, 0.88));
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.6rem, 3.2vw, 2.4rem);
+  box-shadow: var(--shadow-card);
+}
+
+.support-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.support-note {
+  font-size: 0.8rem;
+  color: var(--cream-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* ---------- Nominate Section ---------- */
 .nominate-box {
   display: grid;
@@ -925,6 +953,7 @@ button {
 @media (max-width: 960px) {
   .episode-card,
   .shorts-featured-grid,
+  .support-box,
   .nominate-box {
     grid-template-columns: 1fr;
   }
