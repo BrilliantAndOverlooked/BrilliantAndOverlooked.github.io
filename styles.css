@@ -960,6 +960,34 @@ button {
 }
 
 @media (max-width: 680px) {
+  .nav-inner {
+    gap: 0.65rem;
+    min-height: 64px;
+  }
+
+  .brand-lockup {
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  .brand-crest {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  .brand-wordmark {
+    font-size: 0.84rem;
+    letter-spacing: 0.08em;
+  }
+
+  .site-header .btn-sm {
+    padding: 0.45rem 0.78rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .nav-links {
     display: none;
   }
@@ -970,5 +998,17 @@ button {
 
   .portrait-mat {
     max-width: 210px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-wordmark {
+    font-size: 0.74rem;
+    letter-spacing: 0.05em;
+  }
+
+  .site-header .btn-sm {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.71rem;
   }
 }
